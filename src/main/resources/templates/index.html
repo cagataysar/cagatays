@@ -30,10 +30,38 @@
             }
         </style>
     </noscript>
+    <style>
+        .toTop {
+            display: none;
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            background-color: #39c0ed;
+            color: white;
+            font-size: 30px;
+            line-height: 80px;
+            text-align: center;
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+        }
+        .toTop:hover {
+            cursor: pointer;
+            background-color: #3c3c3c;
+            color: white;
+        }
+        .showButton {
+            display: block;
+        }
+    </style>
 </head>
 
 <body class="bg-light" id="top">
 
+<a class="toTop">Up</a>
+<!--
+⬆️
+-->
 <div th:replace="~{fragments/header :: header}"></div>
 
 <div th:replace="~{fragments/cagatay}"></div>
@@ -57,5 +85,6 @@
 <script src="scripts/mdb.min.js?ver=1.2.1"></script>
 <script src="scripts/aos.js?ver=1.2.1"></script>
 <script src="scripts/main.js?ver=1.2.1"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
